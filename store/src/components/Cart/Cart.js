@@ -21,10 +21,13 @@ export default class Store extends Component {
                   <CartColumns />
                   <CartList value={value} />
                   <CartTotals value={value} history={this.props.history} />
+                  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </React.Fragment>
               );
             } else {
-              return <EmptyCart />;
+              return (<React.Fragment><EmptyCart /> 
+              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+               </React.Fragment>);
             }
           }}
         </ProductConsumer>

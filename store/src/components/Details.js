@@ -4,6 +4,9 @@ import { ButtonContainer } from "./Button";
 import { Link } from "react-router-dom";
 import Navbar from './Navbar';
 export default class Details extends Component {
+
+
+
   render() {
     return (
       <React.Fragment>
@@ -21,6 +24,7 @@ export default class Details extends Component {
           } = value.detailProduct;
 
           return (
+            <div>
             <div className="container py-5">
               {/* title */}
               <div className="row">
@@ -41,7 +45,7 @@ export default class Details extends Component {
                   </h4>
                   <h4 className="text-blue">
                     <strong>
-                      price : <span>$</span>
+                      price : <span><i class="fas fa-rupee-sign    "></i> </span>
                       {price}
                     </strong>
                   </h4>
@@ -51,7 +55,7 @@ export default class Details extends Component {
                   <p className="text-muted lead">{info}</p>
                   {/* buttons */}
                   <div>
-                    <Link to="/">
+                    <Link to="/store">
                       <ButtonContainer>back to products</ButtonContainer>
                     </Link>
                     <ButtonContainer
@@ -67,6 +71,8 @@ export default class Details extends Component {
                   </div>
                 </div>
               </div>
+            </div>   
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </div>
           );
         }}

@@ -16,7 +16,7 @@ export default class Login extends Component {
 
     login(e){
         e.preventDefault();
-        fire.auth().signInAndRetrieveDataWithEmailAndPassword(this.state.email,this.state.password).catch((error)=>{
+        fire.auth().signInWithEmailAndPassword(this.state.email,this.state.password).catch((error)=>{
             console.log(error);
         });
     }

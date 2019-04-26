@@ -38,13 +38,15 @@ authListener(){
   render() {
     return (
       <React.Fragment>
-        {this.state.user ? (<ProductList/>):(<Login/>)}
+
+ 
 
         <Switch>
           <Route path="/details" component={Details} />
           <Route path="/signup" component={Signup} />
           <Route path="/cart" component={Cart} />
         </Switch>
+        {this.state.user ? (<ProductList/>):(<Login/>)}
         <Modal />
       </React.Fragment>
     );
